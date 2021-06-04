@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usuários</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <header>
+    <h2>Cadastro de Usuários</h2>
+  </header>
+  <main>
+    <form id="myForm">
+      <div>
+        <label>Nome completo<span>*</span></label>
+        <input id="name" name="name" required="required">
+      </div>
+      <div>
+        <label>Email<span>*</span></label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label>Telefone<span>*</span></label>
+        <input class="isNumber" id="tel" name="tel" required>
+      </div>
+      <div>
+        <label>CEP<span>*</span></label>
+        <input class="isNumber" id="cep" name="cep" required>
+      </div>
+      <div>
+        <label>Rua<span>*</span></label>
+        <input id="street" name="street" required>
+      </div>
+      <div>
+        <label>Nº<span>*</span></label>
+        <input class="isNumber" id="number" name="number" required>
+      </div>
+      <div>
+        <label>Complemento</label>
+        <input id="comp" name="comp" required>
+      </div>
+      <div>
+        <label>Bairro<span>*</span></label>
+        <input id="neighbourhood" name="neighbourhood" required>
+      </div>
+      <div>
+        <label>Cidade<span>*</span></label>
+        <input id="city" name="city" required>
+      </div>
+      <div>
+        <label>Estado<span>*</span></label>
+        <input id="state" name="state" required>
+      </div>
+      <div>
+        <button type="button" id="btn">Cadastrar</button>
+      </div>
+    </form>
+    <div id="table">
+      <h3>
+        Usuários Cadastrados
+      </h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Cep</th>
+            <th>Rua</th>
+            <th>Nº</th>
+            <th>Comp</th>
+            <th>Bairro</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script src="./assets/app.js"></script>
+
+  
+</body>
+</html>
